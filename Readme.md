@@ -3,10 +3,6 @@
 Just like the Codeforces repository, I will try to organize my code in a way that
 it'll be easy to search and review.
 
-# Compare function
-
-Don't do ```return a - b``` if a and b are floating point numbers!! (ITSA 40 problem B)
-
 # Sidenotes
 #### Setting up a folder using ```git init```
 
