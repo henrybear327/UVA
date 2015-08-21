@@ -24,3 +24,7 @@ When using macro, the parenthesis must always be added!
 
 
 ``` #define MAX(x,y) ((x) > (y) ? (x) : (y)) ```
+
+### 10919
+
+Be aware of the condition commented with ```come on, man!```
