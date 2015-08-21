@@ -10,6 +10,10 @@ String processing. Need a lot of pre-req.
 
 A pretty good one. Need to calculate the answer carefully.
 
+### 10324
+
+Divide the string into groups using one linear scan
+
 ### 10141
 
 All conditions must be considered carefully
