@@ -24,6 +24,8 @@ public class Main
             calendar.set(y, m, d);
             calendar.add(Calendar.DAY_OF_YEAR, f);
 
+            //System.out.println(); //slower, but no flush needed.
+
             out.printf("%d %d %d\n",
                        calendar.get(Calendar.DAY_OF_MONTH),
                        calendar.get(Calendar.MONTH) + 1,
