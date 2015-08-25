@@ -1,8 +1,6 @@
-import java.util.Calendar;
-import java.util.Scanner;
 import java.io.*;
 import java.util.*;
-
+import java.util.Calendar;
 
 public class Main
 {
@@ -19,6 +17,7 @@ public class Main
             d = sc.nextInt();
             m = sc.nextInt();
             y = sc.nextInt();
+
             if(f == 0 && d == 0 & m == 0 & y == 0) break;
 
             m--;
