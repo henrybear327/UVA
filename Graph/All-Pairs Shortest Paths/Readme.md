@@ -24,3 +24,14 @@ for (int i = 1; i < max; i++) {
             }
         }
 ```
+
+### 10171
+
+1. Critical input, where two guys start at the same place, must be considered!!!!
+```
+2
+Y B A A 2
+M B A A 3
+A A
+```
+2. Better use ```min(g1[x][y], val)``` to update vertices to avoid stupid error
