@@ -1,0 +1,46 @@
+Compile using clang++-3.6 -Wall -Wextra -O2
+
+Command given:
+time ./C_style.o <input.txt >out.txt && time ./C_style.o <input.txt >out.txt && time ./C_style.o <input.txt >out.txt && time ./C_style.o <input.txt >out.txt && time ./C_style.o <input.txt >out.txt && time ./C++_style.o <input.txt >out.txt  && time ./C++_style.o <input.txt >out.txt && time ./C++_style.o <input.txt >out.txt && time ./C++_style.o <input.txt >out.txt && time ./C++_style.o <input.txt >out.txt
+
+C runtime:
+real	0m40.474s
+user	0m37.230s
+sys	0m2.939s
+
+real	0m40.383s
+user	0m37.108s
+sys	0m2.983s
+
+real	0m40.053s
+user	0m36.911s
+sys	0m2.833s
+
+real	0m39.882s
+user	0m36.833s
+sys	0m2.805s
+
+real	0m40.494s
+user	0m37.378s
+sys	0m2.751s
+
+C++ runtime:
+real	0m36.475s
+user	0m33.868s
+sys	0m2.428s
+
+real	0m36.712s
+user	0m34.091s
+sys	0m2.447s
+
+real	0m36.913s
+user	0m34.127s
+sys	0m2.513s
+
+real	0m36.806s
+user	0m33.783s
+sys	0m2.685s
+
+real	0m37.171s
+user	0m34.234s
+sys	0m2.671s
