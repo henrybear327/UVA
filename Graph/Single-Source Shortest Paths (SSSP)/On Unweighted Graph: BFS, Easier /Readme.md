@@ -27,3 +27,39 @@ Notes:
     _ Notice: The value of the position of the iterator is ```*i``` _
 
     2. ```for (int i = 0; i < (int)graph[curr].size(); i++)```
+
+### 10653
+
+Don't forget to set the terminating condition!
+
+*Watch out for what you are printing for answer!!*  When using BFS the answer is
+always associated with the terminating condition!! Not the MAX!
+
+Stupid mistake code:
+
+```
+int ans = 0; //WRONG!!!
+while (bfs.size()) {
+    Coor curr = bfs.front();
+    bfs.pop();
+
+    if (curr.x == e.x && curr.y == e.y)
+        break;
+
+    for (int i = 0; i < 4; i++) {
+        if (curr.x + direction[i][0] >= 0 && curr.x + direction[i][0] < row &&
+            curr.y + direction[i][1] >= 0 &&
+            curr.y + direction[i][1] < column &&
+            map[curr.x + direction[i][0]][curr.y + direction[i][1]] == 0 &&
+            visited[curr.x + direction[i][0]][curr.y + direction[i][1]] == -1) {
+            Coor tmp = {curr.x + direction[i][0], curr.y + direction[i][1]};
+            bfs.push(tmp);
+            visited[tmp.x][tmp.y] = visited[curr.x][curr.y] + 1;
+        }
+    }
+
+    ans = visited[curr.x][curr.y] + 1 > ans ? visited[curr.x][curr.y] + 1 : ans; //WRONG!!!
+}
+
+printf("%d\n", ans);
+```
