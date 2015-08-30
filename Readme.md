@@ -16,3 +16,18 @@ error: failed to push some refs to 'ssh://xxxxx.com/project.git'"
 
 You can check using ```git status``` and  ```git branch```,
  you will see no branch at all!
+
+ # Notes
+
+ * GCD
+ ```
+long long int gcd(long long int a, long long int b)
+{
+    return b == 0 ? a : gcd(b, a % b);
+}
+ ```
+
+* Leap year
+```
+year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)
+```
