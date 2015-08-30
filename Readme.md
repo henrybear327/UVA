@@ -17,9 +17,9 @@ error: failed to push some refs to 'ssh://xxxxx.com/project.git'"
 You can check using ```git status``` and  ```git branch```,
  you will see no branch at all!
 
- # Notes
+# Notes
 
- * GCD
+* GCD
 
 ```
 long long int gcd(long long int a, long long int b)
