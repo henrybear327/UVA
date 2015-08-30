@@ -28,6 +28,8 @@ long long int gcd(long long int a, long long int b)
 }
  ```
 
+LCM is just `a * b / gcd(a,b)`
+
 * Leap year
 
 ```
