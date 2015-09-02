@@ -30,7 +30,6 @@ int main()
                 continue;
             }
 
-            // UVa can't compile auto @@
             // auto i = position[number].begin() + occurence - 1;
 
             // vector<int>::iterator i = position[number].begin() + occurence - 1;
