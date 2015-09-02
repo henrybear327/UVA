@@ -9,8 +9,10 @@ int main()
 {
     int total, query;
     while (scanf("%d %d", &total, &query) == 2) {
+        /*
         for (int i = 0; i < 1000001; i++)
-            position[i].clear();
+                    position[i].clear();
+        */
 
         for (int i = 1; i <= total; i++) {
             int tmp;
@@ -30,8 +32,11 @@ int main()
 
             // UVa can't compile auto @@
             // auto i = position[number].begin() + occurence - 1;
-            vector<int>::iterator i = position[number].begin() + occurence - 1;
-            printf("%d\n", *i);
+
+            // vector<int>::iterator i = position[number].begin() + occurence - 1;
+            // printf("%d\n", *i);
+
+            printf("%d\n", position[number][occurence - 1]);
         }
     }
 
