@@ -13,10 +13,14 @@ Declaration example:  `map<string, int> data;`
 ios::sync_with_stdio(false);
 cin.tie(0);
 ```
-# 11572
+### 11572
 
 The main idea behind this problem is to find the maximum distinct sequence using `<map>`
 
 The test data may mislead you into believing that this is an easy `<map>` problem, but _every snowflake in a package must be different from the others_ is the key point and the trickiest thing to consider!!
 
 BTW, the performance difference of this problem between `<map>` and `<unordered_map>` is significant!
+
+### 11286
+
+Think of a special way to record every sequence of input in order to store it into a `<map>`. I choose to use a string to store sorted sequence of numbers so if they chose the same set of courses, they will have the same string!
