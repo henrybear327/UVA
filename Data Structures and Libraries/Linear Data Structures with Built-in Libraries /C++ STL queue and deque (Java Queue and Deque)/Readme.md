@@ -2,7 +2,7 @@
 
 ### 10901
 
-#### The trickiest problem ever coded! Lot's of conditions to take into account!
+#### The trickiest problem ever coded! Lots of conditions to take into account!
 
 Add this one to favorite :)
 
