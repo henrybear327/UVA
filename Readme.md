@@ -16,3 +16,9 @@ error: failed to push some refs to 'ssh://xxxxx.com/project.git'"
 
 You can check using ```git status``` and  ```git branch```,
  you will see no branch at all!
+
+#### When committed on the wrong date/time
+
+```
+GIT_COMMITTER_DATE="Sun Sep 5 01:54:22 2015 +0800" git commit --amend --date "Sun Sep 5 01:54:22 2015 +0800"
+```
