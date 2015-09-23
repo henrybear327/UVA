@@ -6,12 +6,13 @@ int main()
     scanf("%d", &cases);
 
     while (cases--) {
-        getchar();
         int amp, freq;
         scanf("%d %d", &amp, &freq);
-
+	
+	/*
         if (freq == 0) //WTF??
             continue;
+	*/
 
         for (int i = 1; i <= freq; i++) {
             for (int j = 1; j <= amp; j++) {
