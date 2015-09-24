@@ -35,31 +35,23 @@ int main()
             State curr_orig = curr = q.front();
             q.pop();
 
-            if (curr.water_so_far >= res[d])
+            if (curr.water_so_far >= res[d]) // is res[d] is not INT_MAX, then just check for d because d is now present
                 continue;
 
-            if (curr.water_so_far >= DP[curr.jug[0]][curr.jug[1]][curr.jug[2]])
+            if (curr.water_so_far >= DP[curr.jug[0]][curr.jug[1]][curr.jug[2]]) //Don't need to work on the same tuple on deeper level
                 continue;
 
-            DP[curr.jug[0]][curr.jug[1]][curr.jug[2]] = curr.water_so_far;
+            DP[curr.jug[0]][curr.jug[1]][curr.jug[2]] = curr.water_so_far; //update data
             for (int k = 0; k < 3; k++)
                 res[curr.jug[k]] = min(res[curr.jug[k]], curr.water_so_far);
 
             // calculate 6 combination
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    // printf("entry i %d j %d\n", i, j);
                     curr = curr_orig;
                     if (i == j)
                         continue;
 
-                    /*
-                    printf("entry i %d j %d %d: %d %d %d %d\n", i, j,
-                           DP[curr.jug[0]][curr.jug[1]][curr.jug[2]], curr.jug[0],
-                           curr.jug[1], curr.jug[2], curr.water_so_far);
-                    */
-
-                    // printf("here\n");
                     // i to j
                     if (curr.jug[i] + curr.jug[j] <= lim[j]) {
                         curr.water_so_far += curr.jug[i];
@@ -70,11 +62,6 @@ int main()
                         curr.jug[i] -= (lim[j] - curr.jug[j]);
                         curr.jug[j] = lim[j];
                     }
-
-                    /*
-                    printf("i %d j %d: %d %d %d %d\n", i, j, curr.jug[0], curr.jug[1],
-                           curr.jug[2], curr.water_so_far);
-                    */
 
                     q.push(curr);
                 }
