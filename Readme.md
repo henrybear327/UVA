@@ -3,6 +3,11 @@
 Just like the Codeforces repository, I will try to organize my code in a way that
 it'll be easy to search and review.
 
+> No pain, no gain.
+
+> Work harder, or you will become the loser in this field.
+
+
 # Sidenotes
 #### Setting up a folder using ```git init```
 
